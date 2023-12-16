@@ -1,0 +1,32 @@
+{% extends 'upload.html' %}
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"> Upload Your Files </h1>
+
+    <br>
+    <br>
+
+    <div class="">
+      <form class="" action="{{ url_for('up') }}" method="POST", enctype="multipart/form-data">
+        {{  form.hidden_tag()  }}
+
+        {{  form.file(class="btn btn-dark") }}
+        {{ form.submit(  class="btn btn-primary"  )  }}
+      </form>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+
+
+<style type="text/css">
+  .container{
+    text-align:center;
+    padding:10px;}
+</style>
+
+{% endblock %}

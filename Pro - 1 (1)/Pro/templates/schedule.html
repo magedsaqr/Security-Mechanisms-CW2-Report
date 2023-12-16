@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+   <link rel="stylesheet" href="/static/schedule.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+    <title>Schedule</title>
+    
+</head>
+
+<body>  
+    <nav class="navbar">
+        <div class="brand-title">Book Store</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="{{url_for('book')}}">Home</a></li>
+            <li><a href="{{url_for('schedule')}}">Schedule</a></li>
+            <li><a href="{{url_for('logout')}}">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+
+      <form method = "post">
+        <label>Book Name</label>
+        <select name="BookName" id="BookName" type = "text">
+          <option value="The Hill of Dreams">The Hill of Dreams</option>
+          <option value="The Angel of Terror">The Angel of Terror</option>
+          <option value="The Purple Land">The Purple Land</option>
+          <option value="The Black Bag">The Black Bag</option>
+          <option value="The Man Who Knew">The Man Who Knew</option>
+        </select>
+
+        <label for="Time">Time</label>
+        <select name="Time" id="Time" type = "text">
+          <option value="Per Day"> Per Day</option>
+          <option value="Per Week">Per Week</option>
+          <option value="Per Month">Per Month</option>
+        </select>
+        
+        <label>Pages</label>
+
+          <input type="text" name="pages"  required>
+          <span></span>
+          
+          <input type="submit" value="Submit">
+          </form>
+
+
+  </bar>
+  <palign="center"><a href=schedule_detail ><button class=grey style="height:75px;width:150px">Create schedule</button></a></p>
+
+
+</body>
+
+</html>

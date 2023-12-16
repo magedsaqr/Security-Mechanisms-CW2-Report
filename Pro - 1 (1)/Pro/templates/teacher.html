@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/teacher.css">
+
+    <title>Welcome Teacher</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">Book Store</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="{{url_for('logout')}}">Logout</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Welcome Teacher</h1>
+        <button id="PrvFbBtn">Add Grade</button>
+        <button id="PrvFbBtn">Provide Feedback</button>
+
+    </div>
+
+</body>
+</html>

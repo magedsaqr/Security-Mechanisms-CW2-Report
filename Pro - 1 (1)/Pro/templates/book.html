@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/book.css">
+
+    <title>Books</title>
+</head>
+
+<body>  
+    <nav class="navbar">
+        <div class="brand-title">Book Store</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="{{url_for('book')}}">Home</a></li>
+            <li><a href="{{url_for('schedule')}}">Schedule</a></li>
+            <li><a href="{{url_for('up')}}">Upload</a></li>
+            <li><a href="{{url_for('logout')}}">Logout</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <section class = "books" id="books">
+        <h1 class = "heading"> <span> Books  </span> </h1>
+        <div class = "book-slider">
+            <div class = "wrapper">
+                <div class = "box">
+               
+                    <div class = "image">
+                        <img src = "/static/hill of dreams.jpg" alt="">
+                    </div>
+                    <div class = "content">
+                        <h3>Horror</h3>
+                        <a href="{{url_for('read')}}" class = "btn">Read</a>
+                        <a href="{{url_for('purchase')}}" class = "btn">Purchase</a>
+
+                    </div>
+                </div>
+                <div class = "box">
+                
+                    <div class = "image">
+                        <img src = "/static/angel.jpg" alt="">
+                    </div>
+                    <div class = "content">
+                        <h3>Crime</h3>
+                        <a href="{{url_for('read2')}}" class = "btn">Read</a>
+                        <a href="{{url_for('purchase')}}" class = "btn">Purchase</a>
+
+
+                    </div>
+                </div>
+                <div class = "box">
+                 
+                    <div class = "image">
+                        <img src = "/static/purple_land.jpg" alt="">
+
+                    </div>
+                    <div class = "content">
+                        <h3>Adventure</h3>
+                        <a href="{{url_for('read3')}}" class = "btn">Read</a>
+                        <a href="{{url_for('purchase')}}" class = "btn">Purchase</a>
+
+                    </div>
+                </div>
+                <div class = "box">
+                 
+                    <div class = "image">
+                        <img src = "/static/black_bag.jpg" alt="">
+
+                    </div>
+                    <div class = "content">
+                        <h3>Fiction</h3>
+                        <a href="{{url_for('read4')}}" class = "btn">Read</a>
+                        <a href="{{url_for('purchase')}}" class = "btn">Purchase</a>
+
+                    </div>
+                </div>
+                <div class = "box">
+                 
+                    <div class = "image">
+                        <img src = "/static/manwhoknew.jpg" alt="">
+
+                    </div>
+                    <div class = "content">
+                        <h3>Mystery</h3>
+                        <a href="{{url_for('read5')}}" class = "btn">Read</a>
+                        <a href="{{url_for('purchase')}}" class = "btn">Purchase</a>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      </section>
+
+    
+</body>
+
+</html>
